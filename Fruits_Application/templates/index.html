@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center; /* Center the items horizontally */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #111;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        table {
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border-radius: 20px; /* Rounded border for file input */
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #45a049; /* Green background */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px; /* Rounded border for submit button */
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .footer span {
+            display: block; /* Ensure text centering */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Project Details</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>Deep Learning Project</h1>
+    </header>
+    <h2 style="text-align: center;">Fresh Fruit and Rotten Fruit Image Classification</h2>
+    <table>
+        <tr>
+            <td>
+                <form action="/predict" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" accept="image/*" required>
+                    <input type="submit" value="Upload Image">
+                </form>
+            </td>
+        </tr>
+    </table>
+    <footer class="footer">
+        <span>ANIRBAN BANERJEE 21BPS1061</span>
+    </footer>
+</body>
+
+</html>
